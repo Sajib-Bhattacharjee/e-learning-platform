@@ -1,0 +1,32 @@
+/* Reset code starts here  */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reset code ends here  */
+
+/* Universal/Common code starts here */
+
+/* Universal/Common code ends here */
+
+/* Header starts here  */
+
+#logoImage__control {
+  max-width: 3.6rem;
+  height: auto;
+}
+/* Header ends here  */
+
+/* Main section starts here */
+#mainSection__control {
+  min-height: 100vh;
+}
+/* Main section ends here */
