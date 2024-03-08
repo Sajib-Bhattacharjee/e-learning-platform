@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="./images/developerZone__logo.png" />
+    <!-- FontSwesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap all cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <title>Discuss Here</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- External CSS LINK -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <!-- Header starts here  -->
+
+    <header>
+      <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="bg-dark container-fluid py-2">
+          <img
+            id="logoImage__control"
+            class="img-fluid"
+            src="./images/developerZone__logo.png"
+            alt="Developer Zone Logo"
+          />
+          <a class="navbar-brand text-white" href="#">Developer_Zone</a>
+
+          <button
+            class="navbar-toggler btn bg-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Code Compiler</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Courses
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Learn HTML</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Learn CSS</a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="#">Learn BootStrap</a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="#">Learn JavaScript</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Learn TypeScript</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Learn SASS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Learn React.js</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Learn Backend Development</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="./discuss.html" class="nav-link text-white">Discuss</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link text-white">Get Pro</a>
+              </li>
+            </ul>
+
+            <div class="btn-group">
+              <button
+                id="register__btn"
+                class="btn btn-outline-success mx-2 text-white"
+                type="submit"
+              >
+                <a
+                  class="text-white nav-link"
+                  href="./login.html"
+                  target="_blank"
+                  >Log in</a
+                >
+              </button>
+              <button id="register__btn" class="btn btn-danger" type="submit">
+                <a
+                  class="text-white nav-link"
+                  href="./register.html"
+                  target="_blank"
+                >
+                  Register Now
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Header  ends here  -->
+
+    <main id="discussion__main-control">
+      <div class="discussion__section m-auto">
+        <div class="discussion__heading my-5">
+          <h2 class="h2">Q&A Discussions</h2>
+        </div>
+        <div class="discussion__search d-flex justify-content-between">
+          <input
+            class="me-4 form-control form-control-lg"
+            type="text"
+            placeholder="Search..."
+          />
+          <button class="btn btn-outline-success btn-lg" type="submit">
+            Search
+          </button>
+        </div>
+        <div class="discussion__category d-flex justify-content-between my-4">
+          <select
+            id="discussion__select-control"
+            name=""
+            class="form-select form-select-lg"
+          >
+            <option value="">Trending</option>
+            <option value="">Most Recents</option>
+            <option value="">Unasnwered</option>
+            <option value="">My Questions</option>
+            <option value="">My Answers</option>
+          </select>
+          <button type="submit" class="btn-lg btn btn-primary">
+            <a class="nav-link" href="./login.html">Ask a Question</a>
+          </button>
+        </div>
+
+        <div class="discussions__cards">
+          <div
+            class="discussion__card py-2 my-3 card d-flex flex-md-column flex-lg-row"
+          >
+            <div class="discussion__card-left mx-2 flex-grow-1">
+              <h2 class="h5">Game Developemnt <span>👤</span></h2>
+              <div class="discussion__buttons">
+                <button class="btn btn-secondary btn-sm">2d</button>
+                <button class="btn btn-secondary btn-sm">development</button>
+                <button class="btn btn-secondary btn-sm">game</button>
+                <button class="btn btn-secondary btn-sm">games</button>
+                <button class="btn btn-secondary btn-sm">javascripts</button>
+                <button class="btn btn-secondary btn-sm">mobile</button>
+              </div>
+              <div class="discussion__footer mt-3">
+                <span class="text-muted">👍1336 Votes</span>
+                <span class="text-muted">💬1134 Answers</span>
+              </div>
+            </div>
+            <div class="discussion__card-right d-flex flex-row px-2">
+              <div
+                class="discussion__card-right__info d-flex flex-column card-body"
+              >
+                <span>9th Jul 2023 4.37 PM</span>
+                <span>Khulna,USA</span>
+              </div>
+              <div
+                class="discussion__card-right__img card-footer d-flex justify-content-center align-items-center"
+              >
+                <img
+                  id="discussion__card-right__logo-control"
+                  class="img-fluid"
+                  src="./images/user__logo.png"
+                  alt="user image for question/answer"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+
+          <div
+            class="discussion__card py-2 my-3 card d-flex flex-md-column flex-lg-row"
+          >
+            <div class="discussion__card-left mx-2 flex-grow-1">
+              <h2 class="h5">
+                Let's stay safe together, people! <span>👤</span>
+              </h2>
+              <div class="discussion__buttons">
+                <button class="btn btn-secondary btn-sm">games</button>
+                <button class="btn btn-secondary btn-sm">javascripts</button>
+                <button class="btn btn-secondary btn-sm">mobile</button>
+              </div>
+              <div class="discussion__footer mt-3">
+                <span class="text-muted">👍1336 Votes</span>
+                <span class="text-muted">💬1134 Answers</span>
+              </div>
+            </div>
+            <div class="discussion__card-right d-flex flex-row px-2">
+              <div
+                class="discussion__card-right__info d-flex flex-column card-body"
+              >
+                <span>9th Jul 2023 4.37 PM</span>
+                <span>Khulna,USA</span>
+              </div>
+              <div
+                class="discussion__card-right__img card-footer d-flex justify-content-center align-items-center"
+              >
+                <img
+                  id="discussion__card-right__logo-control"
+                  class="img-fluid"
+                  src="./images/user__logo.png"
+                  alt="user image for question/answer"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+
+          <div
+            class="discussion__card py-2 my-3 card d-flex flex-md-column flex-lg-row"
+          >
+            <div class="discussion__card-left mx-2 flex-grow-1">
+              <h2 class="h5">
+                Can anyone please help me with this solving this code in Kotlin.
+                I tried a lot but it's not going well. <span>👤</span>
+              </h2>
+              <div class="discussion__buttons">
+                <button class="btn btn-secondary btn-sm">front</button>
+                <button class="btn btn-secondary btn-sm">application</button>
+                <button class="btn btn-secondary btn-sm">table</button>
+                <button class="btn btn-secondary btn-sm">italic</button>
+                <button class="btn btn-secondary btn-sm">mobile</button>
+              </div>
+              <div class="discussion__footer mt-3">
+                <span class="text-muted">👍1336 Votes</span>
+                <span class="text-muted">💬1134 Answers</span>
+              </div>
+            </div>
+            <div class="discussion__card-right d-flex flex-row px-2">
+              <div
+                class="discussion__card-right__info d-flex flex-column card-body"
+              >
+                <span>9th Jul 2023 4.37 PM</span>
+                <span>Khulna,USA</span>
+              </div>
+              <div
+                class="discussion__card-right__img card-footer d-flex justify-content-center align-items-center"
+              >
+                <img
+                  id="discussion__card-right__logo-control"
+                  class="img-fluid"
+                  src="./images/user__logo.png"
+                  alt="user image for question/answer"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+
+          <div
+            class="discussion__card py-2 my-3 card d-flex flex-md-column flex-lg-row"
+          >
+            <div class="discussion__card-left mx-2 flex-grow-1">
+              <h2 class="h5">
+                What is the difference in the ‘~’ and the ‘^’? <span>👤</span>
+              </h2>
+              <div class="discussion__buttons">
+                <button class="btn btn-secondary btn-sm">games</button>
+                <button class="btn btn-secondary btn-sm">semebld</button>
+                <button class="btn btn-secondary btn-sm">mobile</button>
+                <button class="btn btn-secondary btn-sm">inforce</button>
+                <button class="btn btn-secondary btn-sm">wrap</button>
+              </div>
+              <div class="discussion__footer mt-3">
+                <span class="text-muted">👍1336 Votes</span>
+                <span class="text-muted">💬1134 Answers</span>
+              </div>
+            </div>
+            <div class="discussion__card-right d-flex flex-row px-2">
+              <div
+                class="discussion__card-right__info d-flex flex-column card-body"
+              >
+                <span>9th Jul 2023 4.37 PM</span>
+                <span>Khulna,USA</span>
+              </div>
+              <div
+                class="discussion__card-right__img card-footer d-flex justify-content-center align-items-center"
+              >
+                <img
+                  id="discussion__card-right__logo-control"
+                  class="img-fluid"
+                  src="./images/user__logo.png"
+                  alt="user image for question/answer"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- card 5 -->
+
+          <div
+            class="discussion__card py-2 my-3 card d-flex flex-md-column flex-lg-row"
+          >
+            <div class="discussion__card-left mx-2 flex-grow-1">
+              <h2 class="h5">Game Developemnt <span>👤</span></h2>
+              <div class="discussion__buttons">
+                <button class="btn btn-secondary btn-sm">2d</button>
+                <button class="btn btn-secondary btn-sm">development</button>
+                <button class="btn btn-secondary btn-sm">game</button>
+                <button class="btn btn-secondary btn-sm">games</button>
+                <button class="btn btn-secondary btn-sm">javascripts</button>
+                <button class="btn btn-secondary btn-sm">mobile</button>
+              </div>
+              <div class="discussion__footer mt-3">
+                <span class="text-muted">👍1336 Votes</span>
+                <span class="text-muted">💬1134 Answers</span>
+              </div>
+            </div>
+            <div class="discussion__card-right d-flex flex-row px-2">
+              <div
+                class="discussion__card-right__info d-flex flex-column card-body"
+              >
+                <span>9th Jul 2023 4.37 PM</span>
+                <span>Khulna,USA</span>
+              </div>
+              <div
+                class="discussion__card-right__img card-footer d-flex justify-content-center align-items-center"
+              >
+                <img
+                  id="discussion__card-right__logo-control"
+                  class="img-fluid"
+                  src="./images/user__logo.png"
+                  alt="user image for question/answer"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+
+          <div
+            class="discussion__card py-2 my-3 card d-flex flex-md-column flex-lg-row"
+          >
+            <div class="discussion__card-left mx-2 flex-grow-1">
+              <h2 class="h5">
+                Let's stay safe together, people! <span>👤</span>
+              </h2>
+              <div class="discussion__buttons">
+                <button class="btn btn-secondary btn-sm">games</button>
+                <button class="btn btn-secondary btn-sm">javascripts</button>
+                <button class="btn btn-secondary btn-sm">mobile</button>
+              </div>
+              <div class="discussion__footer mt-3">
+                <span class="text-muted">👍1336 Votes</span>
+                <span class="text-muted">💬1134 Answers</span>
+              </div>
+            </div>
+            <div class="discussion__card-right d-flex flex-row px-2">
+              <div
+                class="discussion__card-right__info d-flex flex-column card-body"
+              >
+                <span>9th Jul 2023 4.37 PM</span>
+                <span>Khulna,USA</span>
+              </div>
+              <div
+                class="discussion__card-right__img card-footer d-flex justify-content-center align-items-center"
+              >
+                <img
+                  id="discussion__card-right__logo-control"
+                  class="img-fluid"
+                  src="./images/user__logo.png"
+                  alt="user image for question/answer"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- card 7 -->
+
+          <div
+            class="discussion__card py-2 my-3 card d-flex flex-md-column flex-lg-row"
+          >
+            <div class="discussion__card-left mx-2 flex-grow-1">
+              <h2 class="h5">
+                Can anyone please help me with this solving this code in Kotlin.
+                I tried a lot but it's not going well. <span>👤</span>
+              </h2>
+              <div class="discussion__buttons">
+                <button class="btn btn-secondary btn-sm">front</button>
+                <button class="btn btn-secondary btn-sm">application</button>
+                <button class="btn btn-secondary btn-sm">table</button>
+                <button class="btn btn-secondary btn-sm">italic</button>
+                <button class="btn btn-secondary btn-sm">mobile</button>
+              </div>
+              <div class="discussion__footer mt-3">
+                <span class="text-muted">👍1336 Votes</span>
+                <span class="text-muted">💬1134 Answers</span>
+              </div>
+            </div>
+            <div class="discussion__card-right d-flex flex-row px-2">
+              <div
+                class="discussion__card-right__info d-flex flex-column card-body"
+              >
+                <span>9th Jul 2023 4.37 PM</span>
+                <span>Khulna,USA</span>
+              </div>
+              <div
+                class="discussion__card-right__img card-footer d-flex justify-content-center align-items-center"
+              >
+                <img
+                  id="discussion__card-right__logo-control"
+                  class="img-fluid"
+                  src="./images/user__logo.png"
+                  alt="user image for question/answer"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+
+          <div
+            class="discussion__card py-2 my-3 card d-flex flex-md-column flex-lg-row"
+          >
+            <div class="discussion__card-left mx-2 flex-grow-1">
+              <h2 class="h5">
+                What is the difference in the ‘~’ and the ‘^’? <span>👤</span>
+              </h2>
+              <div class="discussion__buttons">
+                <button class="btn btn-secondary btn-sm">games</button>
+                <button class="btn btn-secondary btn-sm">semebld</button>
+                <button class="btn btn-secondary btn-sm">mobile</button>
+                <button class="btn btn-secondary btn-sm">inforce</button>
+                <button class="btn btn-secondary btn-sm">wrap</button>
+              </div>
+              <div class="discussion__footer mt-3">
+                <span class="text-muted">👍1336 Votes</span>
+                <span class="text-muted">💬1134 Answers</span>
+              </div>
+            </div>
+            <div class="discussion__card-right d-flex flex-row px-2">
+              <div
+                class="discussion__card-right__info d-flex flex-column card-body"
+              >
+                <span>9th Jul 2023 4.37 PM</span>
+                <span>Khulna,USA</span>
+              </div>
+              <div
+                class="discussion__card-right__img card-footer d-flex justify-content-center align-items-center"
+              >
+                <img
+                  id="discussion__card-right__logo-control"
+                  class="img-fluid"
+                  src="./images/user__logo.png"
+                  alt="user image for question/answer"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="discussion__card py-2 my-3 card d-flex flex-md-column flex-lg-row"
+          >
+            <div class="discussion__card-left mx-2 flex-grow-1">
+              <h2 class="h5">Game Developemnt <span>👤</span></h2>
+              <div class="discussion__buttons">
+                <button class="btn btn-secondary btn-sm">2d</button>
+                <button class="btn btn-secondary btn-sm">development</button>
+                <button class="btn btn-secondary btn-sm">game</button>
+                <button class="btn btn-secondary btn-sm">games</button>
+                <button class="btn btn-secondary btn-sm">javascripts</button>
+                <button class="btn btn-secondary btn-sm">mobile</button>
+              </div>
+              <div class="discussion__footer mt-3">
+                <span class="text-muted">👍1336 Votes</span>
+                <span class="text-muted">💬1134 Answers</span>
+              </div>
+            </div>
+            <div class="discussion__card-right d-flex flex-row px-2">
+              <div
+                class="discussion__card-right__info d-flex flex-column card-body"
+              >
+                <span>9th Jul 2023 4.37 PM</span>
+                <span>Khulna,USA</span>
+              </div>
+              <div
+                class="discussion__card-right__img card-footer d-flex justify-content-center align-items-center"
+              >
+                <img
+                  id="discussion__card-right__logo-control"
+                  class="img-fluid"
+                  src="./images/user__logo.png"
+                  alt="user image for question/answer"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+
+          <div
+            class="discussion__card py-2 my-3 card d-flex flex-md-column flex-lg-row"
+          >
+            <div class="discussion__card-left mx-2 flex-grow-1">
+              <h2 class="h5">
+                Let's stay safe together, people! <span>👤</span>
+              </h2>
+              <div class="discussion__buttons">
+                <button class="btn btn-secondary btn-sm">games</button>
+                <button class="btn btn-secondary btn-sm">javascripts</button>
+                <button class="btn btn-secondary btn-sm">mobile</button>
+              </div>
+              <div class="discussion__footer mt-3">
+                <span class="text-muted">👍1336 Votes</span>
+                <span class="text-muted">💬1134 Answers</span>
+              </div>
+            </div>
+            <div class="discussion__card-right d-flex flex-row px-2">
+              <div
+                class="discussion__card-right__info d-flex flex-column card-body"
+              >
+                <span>9th Jul 2023 4.37 PM</span>
+                <span>Khulna,USA</span>
+              </div>
+              <div
+                class="discussion__card-right__img card-footer d-flex justify-content-center align-items-center"
+              >
+                <img
+                  id="discussion__card-right__logo-control"
+                  class="img-fluid"
+                  src="./images/user__logo.png"
+                  alt="user image for question/answer"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+
+          <div
+            class="discussion__card py-2 my-3 card d-flex flex-md-column flex-lg-row"
+          >
+            <div class="discussion__card-left mx-2 flex-grow-1">
+              <h2 class="h5">
+                Can anyone please help me with this solving this code in Kotlin.
+                I tried a lot but it's not going well. <span>👤</span>
+              </h2>
+              <div class="discussion__buttons">
+                <button class="btn btn-secondary btn-sm">front</button>
+                <button class="btn btn-secondary btn-sm">application</button>
+                <button class="btn btn-secondary btn-sm">table</button>
+                <button class="btn btn-secondary btn-sm">italic</button>
+                <button class="btn btn-secondary btn-sm">mobile</button>
+              </div>
+              <div class="discussion__footer mt-3">
+                <span class="text-muted">👍1336 Votes</span>
+                <span class="text-muted">💬1134 Answers</span>
+              </div>
+            </div>
+            <div class="discussion__card-right d-flex flex-row px-2">
+              <div
+                class="discussion__card-right__info d-flex flex-column card-body"
+              >
+                <span>9th Jul 2023 4.37 PM</span>
+                <span>Khulna,USA</span>
+              </div>
+              <div
+                class="discussion__card-right__img card-footer d-flex justify-content-center align-items-center"
+              >
+                <img
+                  id="discussion__card-right__logo-control"
+                  class="img-fluid"
+                  src="./images/user__logo.png"
+                  alt="user image for question/answer"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+
+          <div
+            class="discussion__card py-2 my-3 card d-flex flex-md-column flex-lg-row"
+          >
+            <div class="discussion__card-left mx-2 flex-grow-1">
+              <h2 class="h5">
+                What is the difference in the ‘~’ and the ‘^’? <span>👤</span>
+              </h2>
+              <div class="discussion__buttons">
+                <button class="btn btn-secondary btn-sm">games</button>
+                <button class="btn btn-secondary btn-sm">semebld</button>
+                <button class="btn btn-secondary btn-sm">mobile</button>
+                <button class="btn btn-secondary btn-sm">inforce</button>
+                <button class="btn btn-secondary btn-sm">wrap</button>
+              </div>
+              <div class="discussion__footer mt-3">
+                <span class="text-muted">👍1336 Votes</span>
+                <span class="text-muted">💬1134 Answers</span>
+              </div>
+            </div>
+            <div class="discussion__card-right d-flex flex-row px-2">
+              <div
+                class="discussion__card-right__info d-flex flex-column card-body"
+              >
+                <span>9th Jul 2023 4.37 PM</span>
+                <span>Khulna,USA</span>
+              </div>
+              <div
+                class="discussion__card-right__img card-footer d-flex justify-content-center align-items-center"
+              >
+                <img
+                  id="discussion__card-right__logo-control"
+                  class="img-fluid"
+                  src="./images/user__logo.png"
+                  alt="user image for question/answer"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- card 5 -->
+
+          <div
+            class="discussion__card py-2 my-3 card d-flex flex-md-column flex-lg-row"
+          >
+            <div class="discussion__card-left mx-2 flex-grow-1">
+              <h2 class="h5">Game Developemnt <span>👤</span></h2>
+              <div class="discussion__buttons">
+                <button class="btn btn-secondary btn-sm">2d</button>
+                <button class="btn btn-secondary btn-sm">development</button>
+                <button class="btn btn-secondary btn-sm">game</button>
+                <button class="btn btn-secondary btn-sm">games</button>
+                <button class="btn btn-secondary btn-sm">javascripts</button>
+                <button class="btn btn-secondary btn-sm">mobile</button>
+              </div>
+              <div class="discussion__footer mt-3">
+                <span class="text-muted">👍1336 Votes</span>
+                <span class="text-muted">💬1134 Answers</span>
+              </div>
+            </div>
+            <div class="discussion__card-right d-flex flex-row px-2">
+              <div
+                class="discussion__card-right__info d-flex flex-column card-body"
+              >
+                <span>9th Jul 2023 4.37 PM</span>
+                <span>Khulna,USA</span>
+              </div>
+              <div
+                class="discussion__card-right__img card-footer d-flex justify-content-center align-items-center"
+              >
+                <img
+                  id="discussion__card-right__logo-control"
+                  class="img-fluid"
+                  src="./images/user__logo.png"
+                  alt="user image for question/answer"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+
+          <div
+            class="discussion__card py-2 my-3 card d-flex flex-md-column flex-lg-row"
+          >
+            <div class="discussion__card-left mx-2 flex-grow-1">
+              <h2 class="h5">
+                Let's stay safe together, people! <span>👤</span>
+              </h2>
+              <div class="discussion__buttons">
+                <button class="btn btn-secondary btn-sm">games</button>
+                <button class="btn btn-secondary btn-sm">javascripts</button>
+                <button class="btn btn-secondary btn-sm">mobile</button>
+              </div>
+              <div class="discussion__footer mt-3">
+                <span class="text-muted">👍1336 Votes</span>
+                <span class="text-muted">💬1134 Answers</span>
+              </div>
+            </div>
+            <div class="discussion__card-right d-flex flex-row px-2">
+              <div
+                class="discussion__card-right__info d-flex flex-column card-body"
+              >
+                <span>9th Jul 2023 4.37 PM</span>
+                <span>Khulna,USA</span>
+              </div>
+              <div
+                class="discussion__card-right__img card-footer d-flex justify-content-center align-items-center"
+              >
+                <img
+                  id="discussion__card-right__logo-control"
+                  class="img-fluid"
+                  src="./images/user__logo.png"
+                  alt="user image for question/answer"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- card 7 -->
+
+          <div
+            class="discussion__card py-2 my-3 card d-flex flex-md-column flex-lg-row"
+          >
+            <div class="discussion__card-left mx-2 flex-grow-1">
+              <h2 class="h5">
+                Can anyone please help me with this solving this code in Kotlin.
+                I tried a lot but it's not going well. <span>👤</span>
+              </h2>
+              <div class="discussion__buttons">
+                <button class="btn btn-secondary btn-sm">front</button>
+                <button class="btn btn-secondary btn-sm">application</button>
+                <button class="btn btn-secondary btn-sm">table</button>
+                <button class="btn btn-secondary btn-sm">italic</button>
+                <button class="btn btn-secondary btn-sm">mobile</button>
+              </div>
+              <div class="discussion__footer mt-3">
+                <span class="text-muted">👍1336 Votes</span>
+                <span class="text-muted">💬1134 Answers</span>
+              </div>
+            </div>
+            <div class="discussion__card-right d-flex flex-row px-2">
+              <div
+                class="discussion__card-right__info d-flex flex-column card-body"
+              >
+                <span>9th Jul 2023 4.37 PM</span>
+                <span>Khulna,USA</span>
+              </div>
+              <div
+                class="discussion__card-right__img card-footer d-flex justify-content-center align-items-center"
+              >
+                <img
+                  id="discussion__card-right__logo-control"
+                  class="img-fluid"
+                  src="./images/user__logo.png"
+                  alt="user image for question/answer"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+
+          <div
+            class="discussion__card py-2 my-3 card d-flex flex-md-column flex-lg-row"
+          >
+            <div class="discussion__card-left mx-2 flex-grow-1">
+              <h2 class="h5">
+                What is the difference in the ‘~’ and the ‘^’? <span>👤</span>
+              </h2>
+              <div class="discussion__buttons">
+                <button class="btn btn-secondary btn-sm">games</button>
+                <button class="btn btn-secondary btn-sm">semebld</button>
+                <button class="btn btn-secondary btn-sm">mobile</button>
+                <button class="btn btn-secondary btn-sm">inforce</button>
+                <button class="btn btn-secondary btn-sm">wrap</button>
+              </div>
+              <div class="discussion__footer mt-3">
+                <span class="text-muted">👍1336 Votes</span>
+                <span class="text-muted">💬1134 Answers</span>
+              </div>
+            </div>
+            <div class="discussion__card-right d-flex flex-row px-2">
+              <div
+                class="discussion__card-right__info d-flex flex-column card-body"
+              >
+                <span>9th Jul 2023 4.37 PM</span>
+                <span>Khulna,USA</span>
+              </div>
+              <div
+                class="discussion__card-right__img card-footer d-flex justify-content-center align-items-center"
+              >
+                <img
+                  id="discussion__card-right__logo-control"
+                  class="img-fluid"
+                  src="./images/user__logo.png"
+                  alt="user image for question/answer"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination starts here -->
+        <nav class="my-5" aria-label="Page navigation   ">
+          <ul class="pagination justify-content-center fw-bold">
+            <li class="page-item disabled">
+              <a class="page-link">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item"><a class="page-link" href="#">7</a></li>
+
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Pagination ends here -->
+      </div>
+    </main>
+
+    <footer
+      id="footer__control"
+      class="text-white text-center m-auto text-lg-start bg-dark"
+    >
+      <!-- Grid container -->
+      <div class="p-4">
+        <!--Grid row-->
+        <div class="row mt-4">
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">About Developer_Zone</h5>
+
+            <p>
+              "Developer_Zone" offers dynamic learning experiences tailored for
+              developers, featuring interactive tutorials, expert-led sessions,
+              and hands-on projects. Join our vibrant community to elevate your
+              coding skills and thrive in the ever-evolving tech industry!
+            </p>
+
+            <p class="fw-bolder">All of us to Learn.</p>
+
+            <div class="mt-4">
+              <!-- Facebook -->
+              <a type="button" class="btn btn-floating btn-light btn-lg"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <!-- Lindedin -->
+              <a type="button" class="btn btn-floating btn-light btn-lg"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <!-- Twitter -->
+              <a type="button" class="btn btn-floating btn-light btn-lg"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <!-- Google + -->
+              <a type="button" class="btn btn-floating btn-light btn-lg"
+                ><i class="fab fa-google-plus-g"></i
+              ></a>
+              <!-- GitHub  -->
+              <a type="button" class="btn btn-floating btn-light btn-lg"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6">
+            <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+
+            <div class="form-outline form-white mb-4">
+              <input
+                type="text"
+                id="formControlLg"
+                class="form-control form-control-lg"
+              />
+              <label class="form-label" for="formControlLg">Search</label>
+            </div>
+
+            <ul class="fa-ul" style="margin-left: 1.65em">
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-home"></i></span
+                ><span class="ms-2">Khulna,Bngladesh,004BD</span>
+              </li>
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-envelope"></i></span
+                ><span class="ms-2">developerzone@gmail.com</span>
+              </li>
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-phone"></i></span
+                ><span class="ms-2">+8801700000000</span>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Our Courses</h5>
+
+            <table class="table table-hover text-center text-white">
+              <tbody class="fw-normal">
+                <tr>
+                  <td>HTML</td>
+                  <td>CSS</td>
+                </tr>
+                <tr>
+                  <td>BootStrap</td>
+                  <td>JavaScript</td>
+                </tr>
+                <tr>
+                  <td>SASS</td>
+                  <td>React</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-sm-1">
+                <input
+                  type="email"
+                  id="form5Example2"
+                  class="form-control"
+                  placeholder="Please Enter Your Email"
+                />
+                <label class="form-label" for="form5Example2"
+                  >Email address</label
+                >
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn text-white btn-outline-info">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2024 Copyright:
+        <a class="text-white" href="#">Developer_Zone.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- End of .container -->
+  </body>
+</html>
