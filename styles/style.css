@@ -28,6 +28,7 @@ html {
 /* Main section starts here */
 #mainSection__control {
   min-height: 100vh;
+  background-color: #f2f5f7;
 }
 /* Main section ends here */
 
@@ -53,3 +54,151 @@ html {
   width: auto;
 }
 /* Discussion section ends here */
+
+#get__guides-control {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#another__get__guide-control {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1199px) {
+  #get__guide-hidden {
+    display: none;
+  }
+}
+
+/* Go-Pro section starts here  */
+
+.go-pro-body-control {
+  background-color: #000a23;
+}
+
+.go-pro-color {
+  color: #8a909d;
+}
+.go-pro-section-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  gap: 1rem;
+  color: white;
+}
+
+.go-pro-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.go-pro-card {
+  text-align: center;
+  flex-basis: 300px;
+  height: 500px;
+  margin: 1rem;
+  background-color: #15213b;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.6s;
+}
+
+.go-pro-card:hover {
+  transform: scale(1.01);
+}
+.go-pro-card-header {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+  height: 150px;
+  gap: 10px;
+}
+
+.go-pro-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.go-pro-card-body ul {
+  width: 240px;
+}
+.go-pro-card-body ul li {
+  margin: 20px 0;
+  text-align: left;
+}
+#go-pro-card-full {
+  border: 1px solid #ffa310;
+
+  box-shadow: -1px -1px #ffa310;
+}
+
+.go-pro-card-footer {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.go-pro {
+  text-transform: uppercase;
+  background-color: #ffa310;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 20px;
+}
+
+.go-pro-btn-free {
+  background-color: transparent;
+  font-size: 1rem;
+  padding: 4px 10px;
+  border: none;
+  color: white;
+}
+
+.go-pro-btn-anual {
+  background-color: #ffa310;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 10px 10px;
+  border: none;
+  color: black;
+}
+.go-pro-btn-montly {
+  background-color: #15213b;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 10px 10px;
+  border: 1px solid #ffa310;
+  color: #ffa310;
+  width: 80%;
+}
+
+.go-pro-btn-montly:hover {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 600px) {
+  .go-pro-section-heading h2 {
+    font-size: 1rem;
+  }
+  .go-pro-card:last-child {
+    order: 1;
+  }
+
+  .go-pro-card:first-child {
+    order: 2;
+  }
+}
+
+/* Go-Pro section ends here  */
