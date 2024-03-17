@@ -44,12 +44,53 @@ html {
   height: auto;
 }
 
-.cover-main-heading {
+/* .cover-main-heading {
   font-size: 2.6rem;
   font-weight: bolder;
 
   font-style: italic;
   font-family: Truculenta;
+} */
+
+.changecontentHeading::after {
+  content: ' ';
+  color: #ff9900;
+  font-weight: bold;
+  font-size: 2.6rem;
+  font-weight: bolder;
+
+  font-style: italic;
+  font-family: Truculenta;
+  animation: changetextHeaing 20s infinite linear;
+}
+@keyframes changetextHeaing {
+  0% {
+    content: 'Learning to code got simplified.';
+  }
+  10% {
+    content: "Learning is fun.Let's start your journey";
+  }
+  20% {
+    content: 'Evaluate your codiing knowledge';
+  }
+  30% {
+    content: 'Nothing is Impossible, Learn code with us';
+  }
+  40% {
+    content: 'Only the Developer path Developer_Zone';
+  }
+  50% {
+    content: 'We teach the world class commitment';
+  }
+  60% {
+    content: 'We believe effort is cuccess, Be effective journey with Developer_Zone';
+  }
+  80% {
+    content: 'Stay Cool and Learn from us Advanced thing';
+  }
+  100% {
+    content: "All in here,Let's starts your journey";
+  }
 }
 /* Conver cnds here  */
 
@@ -63,28 +104,6 @@ html {
   margin: 0 auto;
 }
 /* Main section ends here */
-
-/* Discussion section starts here */
-/* #discussion__main-control {
-  min-height: 100vh;
-  background-color: #f2f5f7;
-}
-.discussion__section {
-  width: 90%;
-}
-#discussion__select-control {
-  width: 300px;
-}
-#discussion__card-right__logo-control {
-  height: 3rem;
-  width: auto;
-} */
-
-/* @media only screen and (min-width: 1199px) {
-  #get__guide-hidden {
-    display: none;
-  }
-} */
 
 /* Discussion section ends here */
 
@@ -108,16 +127,32 @@ html {
 .get__guide-card-height-control {
   min-height: 440px; /* overflow-y: auto; */
 }
-.get__guide-big-card-img-control {
-}
+
 /* Getguide lower ends here  */
 
 /*  Community overview starts here    */
 #community-overview {
   width: 100%;
-  background-color: #f2f5f7;
-  min-height: 60vh;
+  /* background-color: #f2f5f7; */
+  background-color: #44546a;
+  min-height: 100vh;
 }
+.community-hr {
+  border: 5px dotted white;
+  border-bottom: none;
+  max-width: 500px;
+  margin: 0 auto;
+}
+#community-overview-main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#carousel-img-control {
+  height: 260px;
+  width: auto;
+}
+
 /*   Community overview ends here     */
 
 /* Why code upper starts here    */
