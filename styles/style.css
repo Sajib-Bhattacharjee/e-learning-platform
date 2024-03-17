@@ -44,14 +44,6 @@ html {
   height: auto;
 }
 
-/* .cover-main-heading {
-  font-size: 2.6rem;
-  font-weight: bolder;
-
-  font-style: italic;
-  font-family: Truculenta;
-} */
-
 .changecontentHeading::after {
   content: ' ';
   color: #ff9900;
@@ -135,7 +127,6 @@ html {
   width: 100%;
   /* background-color: #f2f5f7; */
   background-color: #44546a;
-  min-height: 100vh;
 }
 .community-hr {
   border: 5px dotted white;
@@ -449,3 +440,20 @@ html {
   background-color: #18171d;
 }
 /* Footer section ends here */
+
+/* Discussion section starts here */
+#discussion__main-control {
+  min-height: 100vh;
+  background-color: #f2f5f7;
+}
+.discussion__section {
+  width: 90%;
+}
+#discussion__select-control {
+  width: 300px;
+}
+#discussion__card-right__logo-control {
+  height: 3rem;
+  width: auto;
+}
+/* Discussion section ends here */
