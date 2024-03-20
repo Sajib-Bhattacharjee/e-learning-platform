@@ -53,7 +53,7 @@ html {
 
   font-style: italic;
   font-family: Truculenta;
-  animation: changetextHeaing 20s infinite linear;
+  animation: changetextHeaing 40s infinite linear;
 }
 @keyframes changetextHeaing {
   0% {
@@ -86,6 +86,21 @@ html {
 }
 /* Conver cnds here  */
 
+/* Course section stars here  */
+#course-control {
+  width: 100%;
+  background-color: #f2f5f7;
+}
+#course-control-main {
+  width: 80%;
+  background-color: #ffffff;
+  margin: 0 auto;
+
+  -webkit-box-shadow: 0 0 10px gray;
+  box-shadow: 0 0 10px gray;
+}
+/* Course section stars here  */
+
 /* Main section starts here */
 #mainSection__control {
   background-color: #f2f5f7;
@@ -96,8 +111,6 @@ html {
   margin: 0 auto;
 }
 /* Main section ends here */
-
-/* Discussion section ends here */
 
 /* Getguide lower starts here  */
 
@@ -302,6 +315,28 @@ html {
 }
 /* Community learner control stars here  */
 
+/* Full functionallity section starts here  */
+
+#full-functionallity-control {
+  width: 100%;
+  /* background-color: #44546a; */
+  background-color: #0f051a;
+}
+
+#full-functionallity-main {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* Full functionallity section ends here   */
+
+/* Footer section starts here */
+#footer__control {
+  overflow: hidden;
+  background-color: #18171d;
+}
+/* Footer section ends here */
+
 /* Go-Pro section starts here  */
 
 .go-pro-body-control {
@@ -433,13 +468,6 @@ html {
 }
 
 /* Go-Pro section ends here  */
-
-/* Footer section starts here */
-#footer__control {
-  overflow: hidden;
-  background-color: #18171d;
-}
-/* Footer section ends here */
 
 /* Discussion section starts here */
 #discussion__main-control {
