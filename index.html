@@ -164,11 +164,15 @@
         id="cover-main-control"
         class="d-flex flex-column justify-content-center align-items-center"
       >
-        <div class="cover__heading mt-5 mb-2">
+        <div class="cover__heading mt-5 mb-2" style="">
           <h1
+            style="text-shadow: 3px 3px 3px greenyellow"
             class="changecontentHeading mb-3 cover-main-heading text-white text-center"
           ></h1>
-          <p class="text-white text-center m-3">
+          <p
+            style="font-size: 1.4rem; text-shadow: -4px -4px 4px green"
+            class="text-white text-center m-3"
+          >
             Learn the latest technology with interactive, hands-on courses. It’s
             free. Learning is fun.I think effort is success...
           </p>
@@ -192,6 +196,554 @@
     </div>
     <!-- Conver ends here  -->
 
+    <!-- Course section atarts here  -->
+    <div id="course-control" style="margin-top: 20px">
+      <div id="course-control-main">
+        <div class="course-heading my-3">
+          <h2 class="h2 fw-bolder text-center">Choose a course for you</h2>
+        </div>
+
+        <!-- all courses  -->
+
+        <div class="row text-center">
+          <div class="div">
+            <ul
+              class="nav d-flex justify-content-center nav-pills mb-3"
+              id="pills-tab"
+              role="tablist"
+            >
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="pills-home-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-home"
+                  aria-selected="true"
+                >
+                  Foont-End
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-profile-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-profile"
+                  aria-selected="false"
+                >
+                  Back-End
+                </button>
+              </li>
+              <!-- <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-contact-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-contact"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-contact"
+                  aria-selected="false"
+                >
+                  Programming Languages
+                </button>
+              </li> -->
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-disabled-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-disabled"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-disabled"
+                  aria-selected="false"
+                >
+                  All
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="pills-home"
+                role="tabpanel"
+                aria-labelledby="pills-home-tab"
+                tabindex="0"
+              >
+                <!-- Frontend cards  -->
+                <div
+                  class="card-container d-flex flex-wrap justify-content-center"
+                >
+                  <!-- Frontend card-1  -->
+                  <div class="m-3 card hover__card" style="width: 18rem">
+                    <img
+                      src="./images/courses/frontend/1.HTML"
+                      class="card-img-top"
+                      alt="Course-1: HTML logo image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Learn HTML</h5>
+                      <p class="card-text">
+                        HTML is stands for Hyper Text Markup Language. Lears
+                        learn Beginner to advanced step by step with Quize and
+                        base practice
+                      </p>
+                      <button class="btn btn-outline-success">
+                        <a class="nav-link" href="./login.html">Enroll now</a>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Frontend card-2  -->
+
+                  <div class="m-3 card hover__card" style="width: 18rem">
+                    <img
+                      src="./images/courses/frontend/2.CSS"
+                      class="card-img-top"
+                      alt="Course-2: CSS logo image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Learn CSS</h5>
+                      <p class="card-text">
+                        HTML is stands for Hyper Text Markup Language. Lears
+                        learn Beginner to advanced step by step with Quize and
+                        base practice
+                      </p>
+                      <button class="btn btn-outline-success">
+                        <a class="nav-link" href="./login.html">Enroll now</a>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Frontend card-3  -->
+
+                  <div class="m-3 card hover__card" style="width: 18rem">
+                    <img
+                      src="./images/courses/frontend/3.BOOTSTRAP.jpeg"
+                      class="card-img-top"
+                      alt="Course-3: BootStrap logo image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Learn BootStrap</h5>
+                      <p class="card-text">
+                        HTML is stands for Hyper Text Markup Language. Lears
+                        learn Beginner to advanced step by step with Quize and
+                        base practice
+                      </p>
+                      <button class="btn btn-outline-success">
+                        <a class="nav-link" href="./login.html">Enroll now</a>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Frontend card-4  -->
+
+                  <div class="m-3 card hover__card" style="width: 18rem">
+                    <img
+                      src="./images/courses/frontend/4.JAVASCRIPT.png"
+                      class="card-img-top"
+                      alt="Course-4: JavaScript logo image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Learn JavaScript</h5>
+                      <p class="card-text">
+                        HTML is stands for Hyper Text Markup Language. Lears
+                        learn Beginner to advanced step by step with Quize and
+                        base practice
+                      </p>
+                      <button class="btn btn-outline-success">
+                        <a class="nav-link" href="./login.html">Enroll now</a>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Frontend card-5  -->
+
+                  <div class="m-3 card hover__card" style="width: 18rem">
+                    <img
+                      src="./images/courses/frontend/5.SASS.jpeg"
+                      class="card-img-top"
+                      alt="Course-5: SASS logo image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Learn SASS</h5>
+                      <p class="card-text">
+                        HTML is stands for Hyper Text Markup Language. Lears
+                        learn Beginner to advanced step by step with Quize and
+                        base practice
+                      </p>
+                      <button class="btn btn-outline-success">
+                        <a class="nav-link" href="./login.html">Enroll now</a>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Frontend card-6  -->
+
+                  <div class="m-3 card hover__card" style="width: 18rem">
+                    <img
+                      src="./images/courses/frontend/6.REACT.png"
+                      class="card-img-top"
+                      alt="Course-6: REACT logo image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Learn React</h5>
+                      <p class="card-text">
+                        HTML is stands for Hyper Text Markup Language. Lears
+                        learn Beginner to advanced step by step with Quize and
+                        base practice
+                      </p>
+                      <button class="btn btn-outline-success">
+                        <a class="nav-link" href="./login.html">Enroll now</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-profile"
+                role="tabpanel"
+                aria-labelledby="pills-profile-tab "
+                tabindex="0"
+              >
+                <!-- Backend cards  -->
+                <div
+                  class="card-container d-flex flex-wrap justify-content-center"
+                >
+                  <!-- Backend card-1  -->
+                  <div class="m-3 card hover__card" style="width: 18rem">
+                    <img
+                      src="./images/courses/backend/1.NODE.png"
+                      class="card-img-top"
+                      alt="Course-1: NODE logo image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Learn Node.js</h5>
+                      <p class="card-text">
+                        HTML is stands for Hyper Text Markup Language. Lears
+                        learn Beginner to advanced step by step with Quize and
+                        base practice
+                      </p>
+                      <button class="btn btn-outline-success">
+                        <a class="nav-link" href="./login.html">Enroll now</a>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Backend card-2  -->
+
+                  <div class="m-3 card hover__card" style="width: 18rem">
+                    <img
+                      src="./images/courses/backend/2.EXPRESS.jpg"
+                      class="card-img-top"
+                      alt="Course-2: EXPRESS logo image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Learn Express.js</h5>
+                      <p class="card-text">
+                        HTML is stands for Hyper Text Markup Language. Lears
+                        learn Beginner to advanced step by step with Quize and
+                        base practice
+                      </p>
+                      <button class="btn btn-outline-success">
+                        <a class="nav-link" href="./login.html">Enroll now</a>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Backend card-3  -->
+
+                  <div class="m-3 card hover__card" style="width: 18rem">
+                    <img
+                      src="./images/courses/backend/3.MONGODB.png"
+                      class="card-img-top"
+                      alt="Course-2: MONGODB logo image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Learn MongoDB</h5>
+                      <p class="card-text">
+                        HTML is stands for Hyper Text Markup Language. Lears
+                        learn Beginner to advanced step by step with Quize and
+                        base practice
+                      </p>
+                      <button class="btn btn-outline-success">
+                        <a class="nav-link" href="./login.html">Enroll now</a>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Backend card-4  -->
+
+                  <div class="m-3 card hover__card" style="width: 18rem">
+                    <img
+                      src="./images/courses/backend/4.AUTHENTICATION.jpg"
+                      class="card-img-top"
+                      alt="Course-4: Web-Authentication logo image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Learn Web-Authentication</h5>
+                      <p class="card-text">
+                        HTML is stands for Hyper Text Markup Language. Lears
+                        learn Beginner to advanced step by step with Quize and
+                        base practice
+                      </p>
+                      <button class="btn btn-outline-success">
+                        <a class="nav-link" href="./login.html">Enroll now</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-contact"
+                role="tabpanel"
+                aria-labelledby="pills-contact-tab"
+                tabindex="0"
+              >
+                <!-- Programming Languages  -->
+                <!-- <div
+                  class="card-container d-flex flex-wrap justify-content-center"
+                >
+                   
+                </div> -->
+              </div>
+              <div
+                class="tab-pane fade r"
+                id="pills-disabled"
+                role="tabpanel"
+                aria-labelledby="pills-disabled-tab"
+                tabindex="0"
+              >
+                <div
+                  class="card-container d-flex flex-wrap justify-content-center"
+                >
+                  <!--All cards  -->
+
+                  <!-- Frontend card-1  -->
+                  <div class="m-3 card hover__card" style="width: 18rem">
+                    <img
+                      src="./images/courses/frontend/1.HTML"
+                      class="card-img-top"
+                      alt="Course-1: HTML logo image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Learn HTML</h5>
+                      <p class="card-text">
+                        HTML is stands for Hyper Text Markup Language. Lears
+                        learn Beginner to advanced step by step with Quize and
+                        base practice
+                      </p>
+                      <button class="btn btn-outline-success">
+                        <a class="nav-link" href="./login.html">Enroll now</a>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Frontend card-2  -->
+
+                  <div class="m-3 card hover__card" style="width: 18rem">
+                    <img
+                      src="./images/courses/frontend/2.CSS"
+                      class="card-img-top"
+                      alt="Course-2: CSS logo image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Learn CSS</h5>
+                      <p class="card-text">
+                        HTML is stands for Hyper Text Markup Language. Lears
+                        learn Beginner to advanced step by step with Quize and
+                        base practice
+                      </p>
+                      <button class="btn btn-outline-success">
+                        <a class="nav-link" href="./login.html">Enroll now</a>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Frontend card-3  -->
+
+                  <div class="m-3 card hover__card" style="width: 18rem">
+                    <img
+                      src="./images/courses/frontend/3.BOOTSTRAP.jpeg"
+                      class="card-img-top"
+                      alt="Course-3: BootStrap logo image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Learn BootStrap</h5>
+                      <p class="card-text">
+                        HTML is stands for Hyper Text Markup Language. Lears
+                        learn Beginner to advanced step by step with Quize and
+                        base practice
+                      </p>
+                      <button class="btn btn-outline-success">
+                        <a class="nav-link" href="./login.html">Enroll now</a>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Frontend card-4  -->
+
+                  <div class="m-3 card hover__card" style="width: 18rem">
+                    <img
+                      src="./images/courses/frontend/4.JAVASCRIPT.png"
+                      class="card-img-top"
+                      alt="Course-4: JavaScript logo image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Learn JavaScript</h5>
+                      <p class="card-text">
+                        HTML is stands for Hyper Text Markup Language. Lears
+                        learn Beginner to advanced step by step with Quize and
+                        base practice
+                      </p>
+                      <button class="btn btn-outline-success">
+                        <a class="nav-link" href="./login.html">Enroll now</a>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Frontend card-5  -->
+
+                  <div class="m-3 card hover__card" style="width: 18rem">
+                    <img
+                      src="./images/courses/frontend/5.SASS.jpeg"
+                      class="card-img-top"
+                      alt="Course-5: SASS logo image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Learn SASS</h5>
+                      <p class="card-text">
+                        HTML is stands for Hyper Text Markup Language. Lears
+                        learn Beginner to advanced step by step with Quize and
+                        base practice
+                      </p>
+                      <button class="btn btn-outline-success">
+                        <a class="nav-link" href="./login.html">Enroll now</a>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Frontend card-6  -->
+
+                  <div class="m-3 card hover__card" style="width: 18rem">
+                    <img
+                      src="./images/courses/frontend/6.REACT.png"
+                      class="card-img-top"
+                      alt="Course-6: REACT logo image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Learn React</h5>
+                      <p class="card-text">
+                        HTML is stands for Hyper Text Markup Language. Lears
+                        learn Beginner to advanced step by step with Quize and
+                        base practice
+                      </p>
+                      <button class="btn btn-outline-success">
+                        <a class="nav-link" href="./login.html">Enroll now</a>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Backend card-1  -->
+                  <div class="m-3 card hover__card" style="width: 18rem">
+                    <img
+                      src="./images/courses/backend/1.NODE.png"
+                      class="card-img-top"
+                      alt="Course-1: NODE logo image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Learn Node.js</h5>
+                      <p class="card-text">
+                        HTML is stands for Hyper Text Markup Language. Lears
+                        learn Beginner to advanced step by step with Quize and
+                        base practice
+                      </p>
+                      <button class="btn btn-outline-success">
+                        <a class="nav-link" href="./login.html">Enroll now</a>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Backend card-2  -->
+
+                  <div class="m-3 card hover__card" style="width: 18rem">
+                    <img
+                      src="./images/courses/backend/2.EXPRESS.jpg"
+                      class="card-img-top"
+                      alt="Course-2: EXPRESS logo image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Learn Express.js</h5>
+                      <p class="card-text">
+                        HTML is stands for Hyper Text Markup Language. Lears
+                        learn Beginner to advanced step by step with Quize and
+                        base practice
+                      </p>
+                      <button class="btn btn-outline-success">
+                        <a class="nav-link" href="./login.html">Enroll now</a>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Backend card-3  -->
+
+                  <div class="m-3 card hover__card" style="width: 18rem">
+                    <img
+                      src="./images/courses/backend/3.MONGODB.png"
+                      class="card-img-top"
+                      alt="Course-2: MONGODB logo image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Learn MongoDB</h5>
+                      <p class="card-text">
+                        HTML is stands for Hyper Text Markup Language. Lears
+                        learn Beginner to advanced step by step with Quize and
+                        base practice
+                      </p>
+                      <button class="btn btn-outline-success">
+                        <a class="nav-link" href="./login.html">Enroll now</a>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Backend card-4  -->
+
+                  <div class="m-3 card hover__card" style="width: 18rem">
+                    <img
+                      src="./images/courses/backend/4.AUTHENTICATION.jpg"
+                      class="card-img-top"
+                      alt="Course-4: Web-Authentication logo image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Learn Web-Authentication</h5>
+                      <p class="card-text">
+                        HTML is stands for Hyper Text Markup Language. Lears
+                        learn Beginner to advanced step by step with Quize and
+                        base practice
+                      </p>
+                      <button class="btn btn-outline-success">
+                        <a class="nav-link" href="./login.html">Enroll now</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Course section ends here  -->
+
     <!-- Main section starts here  -->
 
     <main
@@ -199,6 +751,7 @@
       class="overflow-hidden d-flex justify-content-center align-items-center"
     >
       <!-- Get guide section starts here  -->
+      <!-- style="margin-top: 50px" -->
       <div
         id="get__guides-control"
         class="get__guides row d-flex justify-content-center align-items-center"
@@ -898,6 +1451,220 @@
       </div>
     </div>
     <!-- Community learner section ends here -->
+
+    <!-- Full functionallity section starts here  -->
+    <div id="full-functionallity-control">
+      <div
+        id="full-functionallity-main"
+        class="py-5 d-flex justify-content-evenly flex-wrap"
+      >
+        <div class="row-1 m-2">
+          <h4 class="h5 text-white fw-bold">Learning paths</h4>
+          <a
+            class="nav-link mb-1"
+            style="font-size: 1.1rem; color: whitesmoke"
+            href="./register.html"
+            >Web Development</a
+          >
+
+          <a
+            class="nav-link mb-1"
+            style="font-size: 1.1rem; color: whitesmoke"
+            href="./register.html"
+            >Python Developer</a
+          >
+
+          <a
+            class="nav-link mb-1"
+            style="font-size: 1.1rem; color: whitesmoke"
+            href="./register.html"
+            >Coding for Data</a
+          >
+
+          <a
+            class="nav-link mb-1"
+            style="font-size: 1.1rem; color: whitesmoke"
+            href="./register.html"
+            >Coding for Data</a
+          >
+
+          <a
+            class="nav-link mb-1"
+            style="font-size: 1.1rem; color: whitesmoke"
+            href="./register.html"
+            >Front-end for Beginners</a
+          >
+        </div>
+
+        <!-- rwo2  -->
+
+        <div class="row-2 m-2">
+          <h4 class="h5 text-white fw-bold">Introduction Courses</h4>
+          <a
+            class="nav-link mb-1"
+            style="font-size: 1.1rem; color: whitesmoke"
+            href="./register.html"
+            >Introduction to C</a
+          >
+
+          <a
+            class="nav-link mb-1"
+            style="font-size: 1.1rem; color: whitesmoke"
+            href="./register.html"
+            >Introduction to Python</a
+          >
+
+          <a
+            class="nav-link mb-1"
+            style="font-size: 1.1rem; color: whitesmoke"
+            href="./register.html"
+            >Introduction to C#</a
+          >
+
+          <a
+            class="nav-link mb-1"
+            style="font-size: 1.1rem; color: whitesmoke"
+            href="./register.html"
+            >Introduction to SQL</a
+          >
+
+          <a
+            class="nav-link mb-1"
+            style="font-size: 1.1rem; color: whitesmoke"
+            href="./register.html"
+            >Introduction to HTML</a
+          >
+
+          <a
+            class="nav-link mb-1"
+            style="font-size: 1.1rem; color: whitesmoke"
+            href="./register.html"
+            >Introduction to CSS</a
+          >
+
+          <a
+            class="nav-link mb-1"
+            style="font-size: 1.1rem; color: whitesmoke"
+            href="./register.html"
+            >Introduction to Java</a
+          >
+
+          <a
+            class="nav-link mb-1"
+            style="font-size: 1.1rem; color: whitesmoke"
+            href="./register.html"
+            >Introduction to JavaScript</a
+          >
+
+          <a
+            class="nav-link mb-1"
+            style="font-size: 1.1rem; color: whitesmoke"
+            href="./register.html"
+            >Introduction to C++</a
+          >
+
+          <a
+            class="nav-link mb-1"
+            style="font-size: 1.1rem; color: whitesmoke"
+            href="./register.html"
+            >Tech for Everyone</a
+          >
+        </div>
+
+        <!-- row3  -->
+
+        <div class="row-3 m-2">
+          <h4 class="h5 text-white fw-bold">Intermediate Courses</h4>
+          <a
+            class="nav-link mb-1"
+            style="font-size: 1.1rem; color: whitesmoke"
+            href="./register.html"
+            >C# Intermediate</a
+          >
+
+          <a
+            class="nav-link mb-1"
+            style="font-size: 1.1rem; color: whitesmoke"
+            href="./register.html"
+            >Python Intermediate</a
+          >
+
+          <a
+            class="nav-link mb-1"
+            style="font-size: 1.1rem; color: whitesmoke"
+            href="./register.html"
+            >Java Intermediate</a
+          >
+
+          <a
+            class="nav-link mb-1"
+            style="font-size: 1.1rem; color: whitesmoke"
+            href="./register.html"
+            >JavaScript Intermediate</a
+          >
+
+          <a
+            class="nav-link mb-1"
+            style="font-size: 1.1rem; color: whitesmoke"
+            href="./register.html"
+            >C++ IntermediateL</a
+          >
+
+          <a
+            class="nav-link mb-1"
+            style="font-size: 1.1rem; color: whitesmoke"
+            href="./register.html"
+            >C Intermediate</a
+          >
+
+          <a
+            class="nav-link mb-1"
+            style="font-size: 1.1rem; color: whitesmoke"
+            href="./register.html"
+            >SQL Intermediate Angular</a
+          >
+        </div>
+
+        <!-- row 4  -->
+        <div class="row-4 m-2">
+          <h4 class="h5 text-white fw-bold">Community Section</h4>
+          <a
+            class="nav-link mb-1"
+            style="font-size: 1.1rem; color: whitesmoke"
+            href="./discuss.html"
+            >Discuss</a
+          >
+
+          <a
+            class="nav-link mb-1"
+            style="font-size: 1.1rem; color: whitesmoke"
+            href="./register.html"
+            >Code Bits</a
+          >
+
+          <a
+            class="nav-link mb-1"
+            style="font-size: 1.1rem; color: whitesmoke"
+            href="./register.html"
+            >Blog</a
+          >
+        </div>
+
+        <!-- row 5  -->
+
+        <div class="row-5 m-2">
+          <h4 class="h5 text-white fw-bold">Languages</h4>
+          <select class="form-select" style="width: 180px">
+            <option selected>English</option>
+            <option value="1">Frnach</option>
+            <option value="2">Japaness</option>
+            <option value="3">Bangali</option>
+            <option value="3">Hindi</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <!-- Full functionallity section ends here  -->
 
     <!-- Footer starts here  -->
 
