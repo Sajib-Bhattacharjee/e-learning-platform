@@ -4,6 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" href="./images/developerZone__logo.png" />
+
+    <style>
+      #width-control {
+        max-width: 400px;
+      }
+    </style>
     <!-- FontSwesome cdn -->
     <link
       rel="stylesheet"
@@ -26,86 +32,66 @@
     <!-- External CSS LINK -->
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
-   <body style="background-color: #000a23">
-    <!-- Register section starts here -->
-    <section
-      class="d-flex align-items-center justify-content-center vh-100 m-3"
+  <body style="background-color: #000a23">
+    <div
+      class="d-flex align-items-center justify-content-center min-vh-100 m-3"
     >
       <div
-        class="card bg-secondary text-white fw-bolder"
-        style="border-radius: 15px; max-width: 450px; width: 100%"
+        class="w-100 bg-secondary text-white fw-bold rounded-3 shadow-sm p-3"
+        id="width-control"
       >
-        <div class="card-body p-4">
-          <h2 class="text-uppercase text-center mb-4">Create an account</h2>
-          <form>
-            <div class="">
-              <input
-                type="text"
-                id="name"
-                class="form-control form-control-lg"
-                placeholder="Enter Your Name"
-              />
-              <label class="form-label mt-1" for="name">Your Name</label>
-            </div>
+        <h3 class="h5 text-uppercase text-center mb-3">Create an Account</h3>
+        <form>
+          <label class="form-label" for="name">Your Name</label>
+          <input
+            type="text"
+            class="form-control form-control-sm mb-2"
+            placeholder="Your Name"
+          />
 
-            <div class=" ">
-              <input
-                type="email"
-                id="email"
-                class="form-control form-control-lg"
-                placeholder="Enter Your Email"
-              />
-              <label class="form-label mt-1" for="email">Your Email</label>
-            </div>
+          <label class="form-label" for="email">Your Email</label>
+          <input
+            type="email"
+            class="form-control form-control-sm mb-2"
+            placeholder="Your Email"
+          />
 
-            <div class=" ">
-              <input
-                type="password"
-                id="password"
-                class="form-control form-control-lg"
-                placeholder="Enter Password"
-              />
-              <label class="form-label mt-1" for="password">Password</label>
-            </div>
+          <label class="form-label" for="password">Password</label>
+          <input
+            type="password"
+            class="form-control form-control-sm mb-2"
+            placeholder="Password"
+          />
+          <label class="form-label" for="password">Repeat Your Password</label>
+          <input
+            type="password"
+            class="form-control form-control-sm mb-2"
+            placeholder="Repeat Password"
+          />
 
-            <div class="mb-3">
-              <input
-                type="password"
-                id="confirm-password"
-                class="form-control form-control-lg"
-                placeholder="Confirm Password"
-              />
-              <label class="form-label mt-1" for="confirm-password"
-                >Repeat your password</label
+          <div class="form-check d-flex justify-content-center">
+            <input class="form-check-input me-1" type="checkbox" id="terms" />
+            <label class="form-check-label small" for="terms">
+              I agree to the
+              <a href="#" class="text-info text-decoration-none"
+                ><u>Terms</u></a
               >
-            </div>
+            </label>
+          </div>
 
-            <div class="form-check d-flex justify-content-center mb-3">
-              <input class="form-check-input me-2" type="checkbox" id="terms" />
-              <label class="form-check-label" for="terms">
-                I agree to all statements in
-                <a href="#" class="text-info text-decoration-none"
-                  >Terms of service</a
-                >
-              </label>
-            </div>
+          <button
+            type="button"
+            class="btn fw-bold btn-success btn-sm w-100 mt-2"
+          >
+            Register
+          </button>
 
-            <div class="d-grid">
-              <button type="button" class="btn btn-success btn-lg fw-bold">
-                Register Now
-              </button>
-            </div>
-
-            <p class="text-center text-white mt-3 mb-0">
-              Already have an account?
-              <a href="#" class="text-info fw-bold text-decoration-none"
-                >Login here</a
-              >
-            </p>
-          </form>
-        </div>
+          <p class="text-center text-white mt-2 small">
+            Already have an account?
+            <a href="#" class="fw-bold text-info"><u>Login</u></a>
+          </p>
+        </form>
       </div>
-    </section>
-    <!-- Register section ends here -->
+    </div>
   </body>
 </html>
