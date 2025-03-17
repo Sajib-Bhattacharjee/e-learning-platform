@@ -2,7 +2,7 @@
 
 # 📘 `Developer_Zone Documentation`
 
-#### 🌟 **Live Preview** 🌟 → 💕 [**Developer_Zone**](https://sbc-elearning.netlify.app/) 💕
+#### 🌟 **Live Preview** 🌟 → 💕 [**Developer_Zone**](https://developerzone2025.netlify.app/) 💕
 
 🎉 Click to explore the fun and laughter! 😄
 
